@@ -1,0 +1,67 @@
+<html>
+
+<head>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <div class="container w-50 mt-5 p-5 shadow-lg">
+        <h1>Crud System</h1>
+        
+
+        <div id="allAlert" class="alert alert-danger d-none" >
+            <strong>please inter all feilds !!!</strong>
+        </div>
+
+
+        <label>Product Name :</label>
+        <input type="text" id="pname" class="form-control mb-3 is-invalid">
+        <div class="alert alert-danger d-none" id="nameAlert" role="alert">
+            <strong>please start with capital letter .....</strong>
+        </div>
+
+        <label>Product Category :</label>
+        <input type="text" id="pcategory" class="form-control mb-3">
+
+        <label>Product Price :</label>
+        <input type="text" id="pprice" class="form-control mb-3">
+
+        <label>Product description :</label>
+        <textarea id="pdescription" class="form-control mb-3"></textarea>
+
+        <button  onclick="addProduct()" id="addbtn" class="btn btn-danger">Add Product</button>
+    </div>
+    <input id="searchInp" onkeyup="search()" class="form-control w-25 mx-auto mt-5" type="text" placeholder="saerch....">
+
+    <div class="container mt-3 text-center">
+        <table class="table table-striped">
+            <thead>
+                <th>index</th>
+                <th>Name</th>
+                <th>Category</th>
+                <th>Price</th>
+                <th>Description</th>
+                <th>Delete</th>
+            </thead>
+            <tbody id="tbody">
+               
+            </tbody>
+        </table>
+    </div>
+
+
+
+
+
+
+    
+    <script src="js/jquery-3.5.1.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/first.js"></script>
+
+</body>
+
+</html>
